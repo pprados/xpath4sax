@@ -1,5 +1,5 @@
 A quick XPath analyser with a SAX Parser.
-Some syntaxes are invalide, but all using syntax are presents.
+Some syntaxes are invalides, but all using syntax are presents.
 It's possible to catch many XPath in the same time.
 ```
 XPathXMLHandler handler=new XPathXMLHandler()
@@ -14,8 +14,8 @@ handler.setXPaths(XPathXMLHandler.toXPaths("//b[@at_a='s3']/c"));
 SAXParser parser = SAXParserFactory.newInstance().newSAXParser();
 parser.parse(new InputSource(new StringReader(xml)), handler);
 ```
-The node is orphan, with attributs and all child texts nodes.
-It's possible to use with [http://nu.validator.htmlparser HtmlParser].
+The node is orphan, with attributs and all childs texts nodes.
+It's possible to use with [HtmlParser](http://nu.validator.htmlparser).
 ```
 XPathXMLHandler handler=new XPathXMLHandler()
 {
@@ -32,9 +32,9 @@ htmlParser.setContentHandler(handler);
 htmlParser.parse(new InputSource(new StringReader(html)));
 ```
 
-#summary Accepted syntax
+# Accepted syntax
 
-# Valide syntax
+## Valide syntax
 
  * `"'fixe'"`
  * `"1"`
@@ -66,7 +66,7 @@ htmlParser.parse(new InputSource(new StringReader(html)));
  * `"//@at_a"`
 
 
-# Invalide syntax
+## Invalide syntax
  * `"//text()"`
  * `"//@*"`
  * using dot, node(), functions, etc.
