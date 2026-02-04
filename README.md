@@ -1,3 +1,5 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/pprados/xpath4sax)
+
 A quick XPath analyser with a SAX Parser.
 Some syntaxes are invalides, but all using syntax are presents.
 It's possible to catch many XPath in the same time.
